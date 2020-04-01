@@ -1,0 +1,9 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: zcw-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:9000/eureka/

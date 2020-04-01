@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: zcw-eureka
+server:
+  port: 9000
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false #表示是否从eureka server中获取注册信息
+    register-with-eureka: false #表示是否注册自己到eureka server中
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
